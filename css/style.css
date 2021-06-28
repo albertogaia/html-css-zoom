@@ -101,14 +101,19 @@ header .btn:hover {
 
 .meeting .webcam {
     position: relative;
-    max-width: 300px;
-    max-height: 150px;
+    width: calc(100% / 5 - 20px);
+    height: calc(100% / 5 - 20px);
     margin: 10px;
+}
+
+.meeting .webcam:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
 }
 
 .meeting .webcam img {
     width: 100%;
-    height: 150px;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -123,6 +128,30 @@ header .btn:hover {
     color: white;
     padding: 5px 10px;
     max-width: 60%;
+    text-overflow: ellipsis;
+}
+
+.webcam .more-web {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 5px 10px;
+    background-color: rgb(74, 127, 208);
+    border-radius: 0px 0px 0px 4px;
+}
+
+.webcam:hover .more-web {
+    cursor: pointer;
+    display: block;
+}
+
+.webcam.speaker {
+    border: 3px solid green;
+    border-radius: 2px;
 }
 
 
@@ -150,6 +179,13 @@ footer {
     font-size: 14px;
 }
 
+
+/* spazio un po' le scritte dalle icone */
+
+footer .action p {
+    margin-top: 5px;
+}
+
 footer i:first-child {
     font-size: 26px;
     cursor: pointer;
@@ -164,9 +200,12 @@ footer .action:hover {
     background-color: rgb(96, 96, 96);
 }
 
+
+/* Comandi utente */
+
 .actions-user {
     align-items: center;
-    width: 200px;
+    min-width: 200px;
     justify-content: space-around;
     padding: 0px 5px;
 }
@@ -176,6 +215,9 @@ footer .action:hover {
     align-items: center;
     justify-content: center;
 }
+
+
+/* Creo freccina in su  */
 
 footer .other {
     width: 24px;
@@ -189,14 +231,8 @@ footer .other i {
     font-size: 16px;
 }
 
-footer .actions-room {
-    width: 100px;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(96, 96, 96);
-    color: rgb(255, 65, 65);
-}
+
+/* Comandi admin */
 
 footer .actions-admin {
     width: 50%;
@@ -213,14 +249,26 @@ footer .active i {
     color: rgb(83, 213, 83);
 }
 
-footer .action p {
-    margin-top: 5px;
-}
-
 footer .action span {
     position: absolute;
     top: 10px;
     right: 10px;
+}
+
+
+/* End Meeting */
+
+footer .actions-room {
+    width: 7%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(96, 96, 96);
+    color: rgb(255, 65, 65);
+}
+
+footer .actions-room:hover {
+    cursor: pointer;
 }
 
 
