@@ -12,6 +12,14 @@ body {
     background-color: black;
 }
 
+.flex {
+    display: flex;
+}
+
+.gradient {
+    background: linear-gradient(#828181, #1f1f1f);
+}
+
 
 /* FINE COMMON */
 
@@ -20,7 +28,6 @@ body {
 
 .view-mode {
     width: 100%;
-    display: flex;
     height: 50px;
     justify-content: flex-end;
     align-items: center;
@@ -29,7 +36,6 @@ body {
 header .btn {
     margin-right: 10px;
     padding: 5px 10px;
-    background: linear-gradient(#828181, #1f1f1f);
     color: white;
     border-radius: 5px;
     border: none;
@@ -46,6 +52,70 @@ header .btn:hover {
 
 /* MAIN */
 
+.container {
+    width: 100%;
+    height: calc(100vh - 50px - 70px);
+}
+
+.arrow {
+    width: 5%;
+    /* height: 100%; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: grey;
+}
+
+.arrow i {
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.arr-right i {
+    color: rgb(90, 155, 240);
+}
+
+.meeting .webcam {
+    position: relative;
+    max-width: 300px;
+    max-height: 150px;
+    margin: 10px;
+}
+
+.meeting .webcam .name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    max-width: 60%;
+}
+
+.meeting .webcam .deactive span::before {
+    content: "\f131";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 5px;
+    color: red;
+}
+
+.meeting .webcam img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.meeting.flex {
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow-y: hidden;
+    width: 90%;
+}
+
 
 /* FINE MAIN */
 
@@ -60,4 +130,12 @@ header .btn:hover {
 
 .debug .view-mode {
     background-color: red;
+}
+
+.debug .container {
+    background-color: rgb(194, 194, 194);
+}
+
+.debug .meeting {
+    background-color: hotpink;
 }
