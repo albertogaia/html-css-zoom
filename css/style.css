@@ -101,9 +101,9 @@ header .btn:hover {
 
 .meeting .webcam {
     position: relative;
-    width: calc(100% / 5 - 20px);
-    height: calc(100% / 5 - 20px);
-    margin: 10px;
+    width: calc(100% / 5 - 10px);
+    height: calc(100% / 5 - 10px);
+    margin: 5px;
 }
 
 .meeting .webcam:hover {
