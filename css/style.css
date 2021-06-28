@@ -17,7 +17,11 @@ body {
 }
 
 .gradient {
-    background: linear-gradient(#828181, #1f1f1f);
+    background: linear-gradient(#333333 10%, #1f1f1f);
+}
+
+.rel {
+    position: relative;
 }
 
 
@@ -70,6 +74,10 @@ header .btn:hover {
     font-size: 40px;
     cursor: pointer;
     padding: 10px;
+}
+
+.arr-left:hover {
+    color: white;
 }
 
 .arr-right i {
@@ -133,6 +141,87 @@ header .btn:hover {
 
 
 /* FOOTER */
+
+footer {
+    height: 70px;
+    width: 100%;
+    color: white;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+footer i:first-child {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+footer .action {
+    padding: 10px;
+}
+
+footer .action:hover {
+    cursor: pointer;
+    background-color: rgb(96, 96, 96);
+}
+
+.actions-user {
+    align-items: center;
+    width: 200px;
+    justify-content: space-around;
+    padding: 0px 5px;
+}
+
+.actions-user .flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .other {
+    width: 24px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .other i {
+    font-size: 16px;
+}
+
+footer .actions-room {
+    width: 100px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(96, 96, 96);
+    color: rgb(255, 65, 65);
+}
+
+footer .actions-admin {
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .actions-admin div {
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .active i {
+    color: rgb(83, 213, 83);
+}
+
+footer .action p {
+    margin-top: 5px;
+}
+
+footer .action span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 
 
 /* FINE FOOTER */
