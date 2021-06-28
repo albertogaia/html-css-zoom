@@ -76,12 +76,36 @@ header .btn:hover {
     color: rgb(90, 155, 240);
 }
 
+
+/* Contenitore centrale */
+
+.meeting {
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow-y: hidden;
+    width: 90%;
+}
+
+
+/* Dimensiono il box delle webcam */
+
 .meeting .webcam {
     position: relative;
     max-width: 300px;
     max-height: 150px;
     margin: 10px;
 }
+
+.meeting .webcam img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+/* Overlay nome */
 
 .meeting .webcam .name {
     position: absolute;
@@ -93,27 +117,15 @@ header .btn:hover {
     max-width: 60%;
 }
 
+
+/* Metto icona se sono mutati */
+
 .meeting .webcam .deactive span::before {
     content: "\f131";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 5px;
     color: red;
-}
-
-.meeting .webcam img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-.meeting.flex {
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    overflow-y: hidden;
-    width: 90%;
 }
 
 
